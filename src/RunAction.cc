@@ -2,7 +2,7 @@
  * @Author: mtz nuaamzt@nuaa.edu.cn
  * @Date: 2025-05-21 14:06:54
  * @LastEditors: mtz nuaamzt@nuaa.edu.cn
- * @LastEditTime: 2025-05-21 15:56:24
+ * @LastEditTime: 2025-05-21 17:03:01
  * @FilePath: /betatron/src/RunAction.cc
  * @Description: run action
  */
@@ -31,6 +31,12 @@ RunAction::RunAction() : G4UserRunAction(), fEventTimes(0), fStepTimes(0) {
                                                // (beginofrunaction and endofrun
   man->CreateNtupleIColumn("step");
   man->FinishNtuple(1);
+
+  man->CreateNtuple("primary particle", "PrimaryParticle");// primary particle momontumn
+  man->CreateNtupleDColumn("Px");
+  man->CreateNtupleDColumn("Py");
+  man->CreateNtupleDColumn("Pz");
+  man->FinishNtuple(2);
 }
 RunAction::~RunAction() {}
 void RunAction::BeginOfRunAction(const G4Run *run) {

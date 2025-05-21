@@ -1,0 +1,4 @@
+/home/mtz/betatron/betatron/build/CMakeFiles/rebuild_cache.dir
+/home/mtz/betatron/betatron/build/CMakeFiles/edit_cache.dir
+/home/mtz/betatron/betatron/build/CMakeFiles/x_ray_image.dir
+/home/mtz/betatron/betatron/build/CMakeFiles/main.dir

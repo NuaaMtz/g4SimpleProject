@@ -1,0 +1,6 @@
+# necessary for mt mode
+/run/numberOfThreads 10
+/run/initialize
+
+
+/run/beamOn 50000
