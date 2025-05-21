@@ -2,7 +2,7 @@
  * @Author: mtz nuaamzt@nuaa.edu.cn
  * @Date: 2025-05-21 14:06:54
  * @LastEditors: mtz nuaamzt@nuaa.edu.cn
- * @LastEditTime: 2025-05-21 17:03:01
+ * @LastEditTime: 2025-05-22 00:18:03
  * @FilePath: /betatron/src/RunAction.cc
  * @Description: run action
  */
@@ -88,3 +88,4 @@ void RunAction::EndOfRunAction(const G4Run *run) {
   man->Write();
   man->CloseFile();
 }
+

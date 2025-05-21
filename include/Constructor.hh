@@ -2,7 +2,7 @@
  * @Author: mtz nuaamzt@nuaa.edu.cn
  * @Date: 2025-05-21 11:55:29
  * @LastEditors: mtz nuaamzt@nuaa.edu.cn
- * @LastEditTime: 2025-05-21 22:41:22
+ * @LastEditTime: 2025-05-21 23:40:43
  * @FilePath: /betatron/include/Constructor.hh
  * @Description: define world volume and all the volumes in the world
  */
@@ -33,7 +33,18 @@ public:
   G4Material *worldMaterial ;
   G4LogicalVolume *worldLog;
 
+  void DefineDetector();
+
+  G4VPhysicalVolume *GetPhysicalVolume() const {
+    return physicalDetector;
+  }
+
+  
   //virtual void ConstructSDandField() override;
+private:
+  
+  G4VPhysicalVolume *physicalDetector;
+
 
 };
 #endif

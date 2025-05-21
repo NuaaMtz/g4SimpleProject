@@ -2,7 +2,7 @@
  * @Author: mtz nuaamzt@nuaa.edu.cn
  * @Date: 2025-05-21 15:33:08
  * @LastEditors: mtz nuaamzt@nuaa.edu.cn
- * @LastEditTime: 2025-05-21 15:36:59
+ * @LastEditTime: 2025-05-21 23:43:07
  * @FilePath: /betatron/include/SteppingAction.hh
  * @Description: Stepping Action
  */
@@ -20,6 +20,7 @@
      virtual void UserSteppingAction(const G4Step*);
     private:
     EventAction* fEventAction;
+    G4VPhysicalVolume *physicalDetector;
      
  };
  #endif

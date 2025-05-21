@@ -41,10 +41,18 @@ G4UserEventAction.hh
 ../include/G4UserEventAction.hh
 G4RunManager.hh
 -
+G4Types.hh
+-
 G4UserEventAction.hh
 -
 RunAction.hh
 ../include/RunAction.hh
+array
+-
+vector
+-
+map
+-
 
 ../include/InitializationAction.hh
 G4VUserActionInitialization.hh
@@ -111,6 +119,8 @@ G4Accumulable.hh
 ../include/G4Accumulable.hh
 G4AccumulableManager.hh
 ../include/G4AccumulableManager.hh
+map
+-
 
 ../include/SteppingAction.hh
 G4UserSteppingAction.hh
@@ -138,12 +148,6 @@ PhysicalList.hh
 InitializationAction.hh
 /home/mtz/betatron/betatron/InitializationAction.hh
 
-/home/mtz/betatron/betatron/src/Constructor.cc
-Constructor.hh
-/home/mtz/betatron/betatron/src/Constructor.hh
-G4Material.hh
--
-
 /home/mtz/betatron/betatron/src/EventAction.cc
 EventAction.hh
 /home/mtz/betatron/betatron/src/EventAction.hh
@@ -151,24 +155,12 @@ RunAction.hh
 /home/mtz/betatron/betatron/src/RunAction.hh
 G4UserRunAction.hh
 -
+G4AccumulableManager.hh
+-
 
 /home/mtz/betatron/betatron/src/InitializationAction.cc
 InitializationAction.hh
 /home/mtz/betatron/betatron/src/InitializationAction.hh
-
-/home/mtz/betatron/betatron/src/PhysicalList.cc
-PhysicalList.hh
-/home/mtz/betatron/betatron/src/PhysicalList.hh
-
-/home/mtz/betatron/betatron/src/PrimaryGeneratorAction.cc
-PrimaryGeneratorAction.hh
-/home/mtz/betatron/betatron/src/PrimaryGeneratorAction.hh
-CLHEP/Units/SystemOfUnits.h
--
-G4RunManager.hh
--
-G4ThreeVector.hh
--
 
 /home/mtz/betatron/betatron/src/RunAction.cc
 RunAction.hh
@@ -181,6 +173,10 @@ G4UserRunAction.hh
 /home/mtz/betatron/betatron/src/SteppingAction.cc
 SteppingAction.hh
 /home/mtz/betatron/betatron/src/SteppingAction.hh
+Constructor.hh
+/home/mtz/betatron/betatron/src/Constructor.hh
+EventAction.hh
+/home/mtz/betatron/betatron/src/EventAction.hh
 
 /home/mtz/sofeware/geant4-mt/install/include/Geant4/CLHEP/Geometry/BasicVector3D.h
 iosfwd
