@@ -2,7 +2,7 @@
  * @Author: mtz nuaamzt@nuaa.edu.cn
  * @Date: 2025-05-21 11:36:54
  * @LastEditors: mtz nuaamzt@nuaa.edu.cn
- * @LastEditTime: 2025-05-21 21:41:51
+ * @LastEditTime: 2025-05-21 22:53:05
  * @FilePath: /betatron/readme.md
  * @Description: 
 -->
@@ -108,4 +108,11 @@ $$\begin{align*} x &= \sin\theta \cos\phi \\ y &= \sin\theta \sin\phi \\ z &= \c
 
     fParticleGun->SetParticleMomentumDirection(dir);
 ```
+
+### 4. 圆锥圆和球如何覆盖
+假设BTO中心在原点，最大半径为$R_{BTO}$
+放射源位于z轴上  $z_{source}$ ，其中$z_{source}$<0。
+锥体要覆盖整个BTO，需满足：
+
+$$\theta_{\text{max}} = \arctan\left(\frac{R_{\text{BTO}}}{|z_{\text{source}}|}\right) $$
 

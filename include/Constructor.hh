@@ -2,7 +2,7 @@
  * @Author: mtz nuaamzt@nuaa.edu.cn
  * @Date: 2025-05-21 11:55:29
  * @LastEditors: mtz nuaamzt@nuaa.edu.cn
- * @LastEditTime: 2025-05-21 12:00:42
+ * @LastEditTime: 2025-05-21 22:41:22
  * @FilePath: /betatron/include/Constructor.hh
  * @Description: define world volume and all the volumes in the world
  */
@@ -16,6 +16,10 @@
 #include "G4Material.hh"
 #include "G4SystemOfUnits.hh"
 #include "G4NistManager.hh"
+#include "G4Orb.hh"
+#include "G4USphere.hh"
+#include "G4Sphere.hh"
+#include "G4PVPlacement.hh"
 
 
 class Constructor : public G4VUserDetectorConstruction {
@@ -24,6 +28,10 @@ public:
   virtual ~Constructor();
 
   virtual G4VPhysicalVolume *Construct() override;
+
+  void DefineBTO();
+  G4Material *worldMaterial ;
+  G4LogicalVolume *worldLog;
 
   //virtual void ConstructSDandField() override;
 

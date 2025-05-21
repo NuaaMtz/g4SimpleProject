@@ -23,5 +23,5 @@
 /vis/scene/add/eventID # Drawn at end of event
 /vis/scene/add/date    # Date stamp
 
-/run/beamOn 300
+/run/beamOn 1
 

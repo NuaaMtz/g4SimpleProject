@@ -2,7 +2,7 @@
  * @Author: mtz nuaamzt@nuaa.edu.cn
  * @Date: 2025-05-21 14:44:07
  * @LastEditors: mtz nuaamzt@nuaa.edu.cn
- * @LastEditTime: 2025-05-21 22:25:45
+ * @LastEditTime: 2025-05-21 22:58:27
  * @FilePath: /betatron/src/PrimaryGeneratorAction.cc
  * @Description: primary generator action，not only particle gun but also GPS. But they could not be used at the same time
  */
@@ -73,9 +73,10 @@ G4ThreeVector PrimaryGeneratorAction::IsotropicSource() {
 }
 
 G4ThreeVector PrimaryGeneratorAction::ConeDirection() {
-  G4double theta_max = 30.0 * CLHEP::deg;
+  G4double theta_min = 0 * CLHEP::deg;
+  G4double theta_max = 25.6* CLHEP::deg;
   // theta_max 单位为弧度，方向锥体朝z轴正方向
-  G4double cosThetaMin = std::cos(0.0);
+  G4double cosThetaMin = std::cos(theta_min);
   G4double cosThetaMax = std::cos(theta_max);
   G4double cosTheta = cosThetaMin + (cosThetaMax - cosThetaMin) * G4UniformRand();
   G4double theta = std::acos(cosTheta);
