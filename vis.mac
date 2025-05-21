@@ -1,0 +1,27 @@
+# necessary for mt mode
+/run/numberOfThreads 10
+/run/initialize
+
+
+# waring 
+/control/verbose 0
+/run/verbose 0
+/tracking/verbose 0
+# easy way show proceduce
+/vis/open OGL 600x600-0+0
+#/vis/open DAWNFILE
+/vis/drawVolume
+/vis/scene/add/trajectories smooth
+/vis/scene/endOfEventAction accumulate  # show track in all evnets
+/vis/viewer/set/viewpointThetaPhi 90 90
+/vis/viewer/zoom 0.8
+#  add number of particle could be showd
+/vis/ogl/set/displayListLimit 10000000
+# add some imformation
+/vis/scene/add/scale   # Simple scale line
+/vis/scene/add/axes    # Simple axes: x=red, y=green, z=blue.
+/vis/scene/add/eventID # Drawn at end of event
+/vis/scene/add/date    # Date stamp
+
+/run/beamOn 200
+
