@@ -2,7 +2,7 @@
  * @Author: mtz nuaamzt@nuaa.edu.cn
  * @Date: 2025-05-21 11:36:54
  * @LastEditors: mtz nuaamzt@nuaa.edu.cn
- * @LastEditTime: 2025-05-22 10:30:43
+ * @LastEditTime: 2025-05-22 10:51:40
  * @FilePath: /betatron/readme.md
  * @Description: 
 -->
@@ -20,6 +20,7 @@
    /run/numberOfThreads 10
    /run/initialize
    ```
+强调：必须启用多线程模式，/run/numberOfThreads至少为2
 1. Run-Event-Step的关系如下：
 
    ![alt text](./image/readme/relationship.jpg)

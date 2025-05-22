@@ -2,7 +2,7 @@
  * @Author: mtz nuaamzt@nuaa.edu.cn
  * @Date: 2025-05-21 11:55:44
  * @LastEditors: mtz nuaamzt@nuaa.edu.cn
- * @LastEditTime: 2025-05-22 10:20:26
+ * @LastEditTime: 2025-05-22 11:56:16
  * @FilePath: /betatron/src/Constructor.cc
  * @Description: define world volume and all the volumes in the world
  */
@@ -31,7 +31,7 @@ G4VPhysicalVolume *Constructor::Construct() {
       new G4PVPlacement(0, G4ThreeVector(), worldLog, "World", 0, false, 0);
 
   // Define BTO
-  DefineBTO();
+  // DefineBTO();
 
   // Define detector
   DefineDetector();
@@ -135,8 +135,8 @@ void Constructor::DefineDetector() {
   G4NistManager *nist = G4NistManager::Instance();
   G4int nrows = 10;
   G4int ncols = 6;
-  G4double xDetec = 0.3 * m;// >0.24m
-  G4double yDetec = 0.3 * m;
+  G4double xDetec = 0.5 * m;// >0.24m
+  G4double yDetec = 0.5 * m;
   G4double xDetecHalf = (xDetec / ncols) / 2.0;
   G4double yDetecHalf = (yDetec / nrows) / 2.0;
 

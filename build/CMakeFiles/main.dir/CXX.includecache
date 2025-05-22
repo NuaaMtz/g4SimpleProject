@@ -80,6 +80,14 @@ G4UserSteppingAction.hh
 EventAction.hh
 ../include/EventAction.hh
 
+/home/mtz/betatron/betatron/src/RunAction.cc
+RunAction.hh
+/home/mtz/betatron/betatron/src/RunAction.hh
+G4Types.hh
+-
+G4UserRunAction.hh
+-
+
 /home/mtz/betatron/betatron/src/SteppingAction.cc
 SteppingAction.hh
 /home/mtz/betatron/betatron/src/SteppingAction.hh

@@ -1,3 +1,11 @@
+/*
+ * @Author: mtz nuaamzt@nuaa.edu.cn
+ * @Date: 2025-05-21 15:33:00
+ * @LastEditors: mtz nuaamzt@nuaa.edu.cn
+ * @LastEditTime: 2025-05-22 12:03:40
+ * @FilePath: /betatron/src/SteppingAction.cc
+ * @Description: 这是默认设置,请设置`customMade`, 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE//
+ */
 #include "SteppingAction.hh"
 #include "Constructor.hh"
 #include "EventAction.hh"
@@ -6,7 +14,7 @@ SteppingAction::SteppingAction(EventAction *eventAction)
     : G4UserSteppingAction(), fEventAction(eventAction),
       physicalDetector(nullptr),logicalDetector(nullptr) {
   // Initialize the stepping action
-  G4cout << "Stepping Action" << G4endl;
+  // G4cout << "Stepping Action" << G4endl;
 }
 
 SteppingAction::~SteppingAction() {
@@ -15,7 +23,7 @@ SteppingAction::~SteppingAction() {
 
 void SteppingAction::UserSteppingAction(const G4Step *step) {
   // Process the step
-  G4cout << "Stepping Action" << G4endl;
+  // G4cout << "Stepping Action" << G4endl;
   fEventAction->AddStepTimes(1);
   // test: AnalysisManager could be work on step
   // auto man = G4AnalysisManager::Instance();
@@ -46,11 +54,21 @@ void SteppingAction::UserSteppingAction(const G4Step *step) {
   G4int i = copyNo / RunAction::ncols;
   G4int j = copyNo % RunAction::ncols;
 
+  //Get position X and Y
+  G4double x = step->GetPreStepPoint()->GetPosition().x();
+  G4double y = step->GetPreStepPoint()->GetPosition().y();
+
   // store 
   auto man = G4AnalysisManager::Instance();
   man->FillNtupleIColumn(3, 0, i);    // ntupleId 3, column 0
   man->FillNtupleIColumn(3, 1, j);    // ntupleId 3, column 1
   man->FillNtupleDColumn(3, 2, edep); // ntupleId 3, column 2
   man->AddNtupleRow(3);
+
+  man->FillNtupleDColumn(4, 0, x);    // ntupleId 4, column
+  man->FillNtupleDColumn(4, 1, y);    // ntupleId 4, column
+  man->FillNtupleDColumn(4, 2, edep); // ntupleId 4, column
+  man->FillNtupleDColumn(4,3,edep); // ntupleId 4, column
+  man->AddNtupleRow(4) ;
   
 }

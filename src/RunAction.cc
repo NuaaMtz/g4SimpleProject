@@ -2,7 +2,7 @@
  * @Author: mtz nuaamzt@nuaa.edu.cn
  * @Date: 2025-05-21 14:06:54
  * @LastEditors: mtz nuaamzt@nuaa.edu.cn
- * @LastEditTime: 2025-05-22 09:58:03
+ * @LastEditTime: 2025-05-22 12:04:06
  * @FilePath: /betatron/src/RunAction.cc
  * @Description: run action
  */
@@ -39,16 +39,25 @@ RunAction::RunAction() : G4UserRunAction(), fEventTimes(0), fStepTimes(0) {
   man->CreateNtupleDColumn("Pz");
   man->FinishNtuple(2);
 
-  man->CreateNtuple("stepData", "Step Data");
+  man->CreateNtuple("stepDataDec", "Step Data Detector");
   man->CreateNtupleIColumn("i");
   man->CreateNtupleIColumn("j");
   man->CreateNtupleDColumn("edep");
   man->FinishNtuple(3);
+
+  man->CreateNtuple("SetpData", "Step Data");
+  man->CreateNtupleDColumn("x");
+  man->CreateNtupleDColumn("y");
+  man->CreateNtupleDColumn("z");
+  man->CreateNtupleDColumn("edep");
+  man->FinishNtuple(4);
 }
-RunAction::~RunAction() {}
+RunAction::~RunAction() {
+  
+}
 void RunAction::BeginOfRunAction(const G4Run *run) {
   // Initialize the run action
-  G4cout << "Begin of Run" << G4endl;
+  // G4cout << "Begin of Run" << G4endl;
 
   // create root files
   G4RunManager::GetRunManager()->SetRandomNumberStore(false);
@@ -62,7 +71,7 @@ void RunAction::BeginOfRunAction(const G4Run *run) {
 }
 void RunAction::EndOfRunAction(const G4Run *run) {
   // Finalize the run action
-  G4cout << "End of Run" << G4endl;
+  // G4cout << "End of Run" << G4endl;
   auto man = G4Root::G4AnalysisManager::Instance();
   if (!G4Threading::IsMasterThread()) {
     man->FillH1(0, 1);
