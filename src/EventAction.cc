@@ -2,7 +2,7 @@
  * @Author: mtz nuaamzt@nuaa.edu.cn
  * @Date: 2025-05-21 15:11:57
  * @LastEditors: mtz nuaamzt@nuaa.edu.cn
- * @LastEditTime: 2025-05-22 00:17:35
+ * @LastEditTime: 2025-05-22 10:08:03
  * @FilePath: /betatron/src/EventAction.cc
  * @Description: Event Action(begin and end of event)
  */
@@ -32,5 +32,8 @@ void EventAction::EndOfEventAction(const G4Event *) {
   // Finalize the event action
   G4cout << "End of Event" << G4endl;
   fRunAction->AddStepTimes(fStepTimes.GetValue());
+  fRunAction->AddEventTimes(1);
+  // merge eventEdep
+
 
 }

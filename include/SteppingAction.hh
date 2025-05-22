@@ -2,7 +2,7 @@
  * @Author: mtz nuaamzt@nuaa.edu.cn
  * @Date: 2025-05-21 15:33:08
  * @LastEditors: mtz nuaamzt@nuaa.edu.cn
- * @LastEditTime: 2025-05-21 23:43:07
+ * @LastEditTime: 2025-05-22 10:22:44
  * @FilePath: /betatron/include/SteppingAction.hh
  * @Description: Stepping Action
  */
@@ -21,6 +21,9 @@
     private:
     EventAction* fEventAction;
     G4VPhysicalVolume *physicalDetector;
+    G4LogicalVolume *logicalDetector;
+
+
      
  };
  #endif

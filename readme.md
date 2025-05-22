@@ -2,7 +2,7 @@
  * @Author: mtz nuaamzt@nuaa.edu.cn
  * @Date: 2025-05-21 11:36:54
  * @LastEditors: mtz nuaamzt@nuaa.edu.cn
- * @LastEditTime: 2025-05-21 22:53:05
+ * @LastEditTime: 2025-05-22 10:30:43
  * @FilePath: /betatron/readme.md
  * @Description: 
 -->
@@ -116,3 +116,37 @@ $$\begin{align*} x &= \sin\theta \cos\phi \\ y &= \sin\theta \sin\phi \\ z &= \c
 
 $$\theta_{\text{max}} = \arctan\left(\frac{R_{\text{BTO}}}{|z_{\text{source}}|}\right) $$
 
+### 5. 在event和run中的root文件写入
+
+在runAction中创建文件后，直接就在evnet或者step中实例化g4root，再写入即可。如下面写在step：
+```C++
+  auto man = G4AnalysisManager::Instance();
+  man->FillNtupleIColumn(3, 0, i);    // ntupleId 3, column 0
+  man->FillNtupleIColumn(3, 1, j);    // ntupleId 3, column 1
+  man->FillNtupleDColumn(3, 2, edep); // ntupleId 3, column 2
+  man->AddNtupleRow(3);
+
+```
+
+### 6. 在step中判断所在位置
+一定要用逻辑体来判断是否进入了探测器！  
+copyNo必须用物理体获得
+
+```C++
+  // get detector logicalvolume
+  if (logicalDetector == nullptr) {
+    // get Constructor
+    const Constructor *detectorConstruction = static_cast<const Constructor *>(
+        G4RunManager::GetRunManager()->GetUserDetectorConstruction());
+        logicalDetector = detectorConstruction->GetLogicalVolume();
+  }
+
+  // get current logical volume
+  G4LogicalVolume *volume =
+      step->GetPreStepPoint()->GetTouchableHandle()->GetVolume()->GetLogicalVolume();
+
+  // check if we are in scoring volume
+  if (volume != logicalDetector) {
+    return;
+  }
+```

@@ -2,7 +2,7 @@
  * @Author: mtz nuaamzt@nuaa.edu.cn
  * @Date: 2025-05-21 14:06:54
  * @LastEditors: mtz nuaamzt@nuaa.edu.cn
- * @LastEditTime: 2025-05-22 00:18:03
+ * @LastEditTime: 2025-05-22 09:58:03
  * @FilePath: /betatron/src/RunAction.cc
  * @Description: run action
  */
@@ -32,11 +32,18 @@ RunAction::RunAction() : G4UserRunAction(), fEventTimes(0), fStepTimes(0) {
   man->CreateNtupleIColumn("step");
   man->FinishNtuple(1);
 
-  man->CreateNtuple("primary particle", "PrimaryParticle");// primary particle momontumn
+  man->CreateNtuple("primary particle",
+                    "PrimaryParticle"); // primary particle momontumn
   man->CreateNtupleDColumn("Px");
   man->CreateNtupleDColumn("Py");
   man->CreateNtupleDColumn("Pz");
   man->FinishNtuple(2);
+
+  man->CreateNtuple("stepData", "Step Data");
+  man->CreateNtupleIColumn("i");
+  man->CreateNtupleIColumn("j");
+  man->CreateNtupleDColumn("edep");
+  man->FinishNtuple(3);
 }
 RunAction::~RunAction() {}
 void RunAction::BeginOfRunAction(const G4Run *run) {
@@ -57,10 +64,9 @@ void RunAction::EndOfRunAction(const G4Run *run) {
   // Finalize the run action
   G4cout << "End of Run" << G4endl;
   auto man = G4Root::G4AnalysisManager::Instance();
-  if(!G4Threading::IsMasterThread()){
+  if (!G4Threading::IsMasterThread()) {
     man->FillH1(0, 1);
   }
-  
 
   // make sure the run is not empty
   G4int nofEvents = run->GetNumberOfEvent();
@@ -84,8 +90,10 @@ void RunAction::EndOfRunAction(const G4Run *run) {
     man->AddNtupleRow(0);
     man->FillNtupleIColumn(1, 0, stepTimes); // ntupleId 1, columnId 0
     man->AddNtupleRow(1);
+
   }
   man->Write();
   man->CloseFile();
 }
+
 

@@ -2,7 +2,7 @@
  * @Author: mtz nuaamzt@nuaa.edu.cn
  * @Date: 2025-05-21 14:06:49
  * @LastEditors: mtz nuaamzt@nuaa.edu.cn
- * @LastEditTime: 2025-05-22 00:17:52
+ * @LastEditTime: 2025-05-22 10:08:37
  * @FilePath: /betatron/include/RunAction.hh
  * @Description: run action
  */
@@ -35,9 +35,13 @@ static const G4int ncols = 6;
   void AddDetectorEdepMap(const std::map<G4int, G4double>& eventMap);
 
 
+
+
+  
 private:
     G4Accumulable<G4int> fEventTimes;// counts event times
     G4Accumulable<G4int> fStepTimes;// counts step times
+
    
 };
 #endif

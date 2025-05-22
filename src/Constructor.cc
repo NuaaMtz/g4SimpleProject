@@ -2,7 +2,7 @@
  * @Author: mtz nuaamzt@nuaa.edu.cn
  * @Date: 2025-05-21 11:55:44
  * @LastEditors: mtz nuaamzt@nuaa.edu.cn
- * @LastEditTime: 2025-05-21 23:39:50
+ * @LastEditTime: 2025-05-22 10:20:26
  * @FilePath: /betatron/src/Constructor.cc
  * @Description: define world volume and all the volumes in the world
  */
@@ -150,7 +150,7 @@ void Constructor::DefineDetector() {
   detectorMat->AddElement(elementI, 1);  // 1 Iodine atom
   G4Box *solidDetector = new G4Box("solidDetector", xDetecHalf, yDetecHalf,
                                    0.01 * m); // x,y,z (half)
-                                   G4LogicalVolume *logicalDetector;
+                                  
   logicalDetector =
       new G4LogicalVolume(solidDetector, detectorMat, "logicalDetector");
 
@@ -159,7 +159,7 @@ void Constructor::DefineDetector() {
       G4double xPos = -xDetec / 2.0 + (j + 0.5) * 2.0 * xDetecHalf;
       G4double yPos = yDetec / 2.0 - (i + 0.5) * 2.0 * yDetecHalf;
 
-      G4VPhysicalVolume *physicalDetector=new G4PVPlacement(0, G4ThreeVector(xPos, yPos, 0.25 * m),
+      physicalDetector=new G4PVPlacement(0, G4ThreeVector(xPos, yPos, 0.25 * m),
                                       logicalDetector, "phyDetector",
                                       worldLog, false, j + i * ncols, true);
     }

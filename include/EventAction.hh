@@ -2,7 +2,7 @@
  * @Author: mtz nuaamzt@nuaa.edu.cn
  * @Date: 2025-05-21 15:10:35
  * @LastEditors: mtz nuaamzt@nuaa.edu.cn
- * @LastEditTime: 2025-05-22 00:17:25
+ * @LastEditTime: 2025-05-22 10:08:21
  * @FilePath: /betatron/include/EventAction.hh
  * @Description: Event Action(begin and end of event)
  */
@@ -32,12 +32,18 @@ static const G4int ncols = 6;
   void AddStepTimes(G4int time) { fStepTimes += time; } // counts step times
 
 
+  std::vector<G4double> eventEdep;
+  std::vector<G4int> eventPos;
+  static const G4int nCells = nrows * ncols;
 
 
 
 private:
   G4Accumulable<G4int> fStepTimes; // counts step times
   RunAction* fRunAction; // run action
+  
+
+
  
 };
 
