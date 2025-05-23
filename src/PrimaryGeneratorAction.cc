@@ -2,9 +2,10 @@
  * @Author: mtz nuaamzt@nuaa.edu.cn
  * @Date: 2025-05-21 14:44:07
  * @LastEditors: mtz nuaamzt@nuaa.edu.cn
- * @LastEditTime: 2025-05-21 22:58:27
+ * @LastEditTime: 2025-05-22 16:20:43
  * @FilePath: /betatron/src/PrimaryGeneratorAction.cc
- * @Description: primary generator action，not only particle gun but also GPS. But they could not be used at the same time
+ * @Description: primary generator action，not only particle gun but also GPS.
+ * But they could not be used at the same time
  */
 #include "PrimaryGeneratorAction.hh"
 #include <CLHEP/Units/SystemOfUnits.h>
@@ -33,13 +34,13 @@ void PrimaryGeneratorAction::GeneratePrimaries(G4Event *anEvent) {
 
   // Set the particle type
   G4ParticleTable *particleTable = G4ParticleTable::GetParticleTable();
-  G4String particleName = "gamma";
+  G4String particleName = "proton";
   G4ParticleDefinition *particle = particleTable->FindParticle(particleName);
   fParticleGun->SetParticleDefinition(particle);
 
   for (G4int i = 0; i < n_particles; ++i) {
     // direction
-    // \theta 
+    // \theta
     G4ThreeVector dir = ConeDirection();
     fParticleGun->SetParticleMomentumDirection(dir);
 
@@ -50,7 +51,6 @@ void PrimaryGeneratorAction::GeneratePrimaries(G4Event *anEvent) {
     // position
     fParticleGun->SetParticlePosition(G4ThreeVector(0, 0., -0.25 * m));
 
-    // Fill to Roor files
     man->FillNtupleDColumn(2, 0, energy * dir.x());
     man->FillNtupleDColumn(2, 1, energy * dir.y());
     man->FillNtupleDColumn(2, 2, energy * dir.z());
@@ -74,11 +74,12 @@ G4ThreeVector PrimaryGeneratorAction::IsotropicSource() {
 
 G4ThreeVector PrimaryGeneratorAction::ConeDirection() {
   G4double theta_min = 0 * CLHEP::deg;
-  G4double theta_max = 25.6* CLHEP::deg;
+  G4double theta_max = 25.6 * CLHEP::deg;
   // theta_max 单位为弧度，方向锥体朝z轴正方向
   G4double cosThetaMin = std::cos(theta_min);
   G4double cosThetaMax = std::cos(theta_max);
-  G4double cosTheta = cosThetaMin + (cosThetaMax - cosThetaMin) * G4UniformRand();
+  G4double cosTheta =
+      cosThetaMin + (cosThetaMax - cosThetaMin) * G4UniformRand();
   G4double theta = std::acos(cosTheta);
   G4double phi = 2. * CLHEP::pi * G4UniformRand();
 

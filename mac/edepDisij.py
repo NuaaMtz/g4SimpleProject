@@ -19,7 +19,8 @@ cell_width = xDetec / ncols
 cell_height = yDetec / nrows
 
 # Open ROOT file
-file = uproot.open("rt/output_target0.root")
+# file = uproot.open("rt/output_target0.root")
+file = uproot.open("rt/merge.root")
 tree = file["stepDataDec"]
 
 # Read data

@@ -60,106 +60,106 @@ include CMakeFiles/main.dir/flags.make
 CMakeFiles/main.dir/main.cc.o: CMakeFiles/main.dir/flags.make
 CMakeFiles/main.dir/main.cc.o: ../main.cc
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mtz/betatron/betatron/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/main.dir/main.cc.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/main.dir/main.cc.o -c /home/mtz/betatron/betatron/main.cc
+	/usr/bin/g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/main.dir/main.cc.o -c /home/mtz/betatron/betatron/main.cc
 
 CMakeFiles/main.dir/main.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/main.dir/main.cc.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/mtz/betatron/betatron/main.cc > CMakeFiles/main.dir/main.cc.i
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/mtz/betatron/betatron/main.cc > CMakeFiles/main.dir/main.cc.i
 
 CMakeFiles/main.dir/main.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/main.dir/main.cc.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/mtz/betatron/betatron/main.cc -o CMakeFiles/main.dir/main.cc.s
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/mtz/betatron/betatron/main.cc -o CMakeFiles/main.dir/main.cc.s
 
 CMakeFiles/main.dir/src/Constructor.cc.o: CMakeFiles/main.dir/flags.make
 CMakeFiles/main.dir/src/Constructor.cc.o: ../src/Constructor.cc
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mtz/betatron/betatron/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/main.dir/src/Constructor.cc.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/main.dir/src/Constructor.cc.o -c /home/mtz/betatron/betatron/src/Constructor.cc
+	/usr/bin/g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/main.dir/src/Constructor.cc.o -c /home/mtz/betatron/betatron/src/Constructor.cc
 
 CMakeFiles/main.dir/src/Constructor.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/main.dir/src/Constructor.cc.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/mtz/betatron/betatron/src/Constructor.cc > CMakeFiles/main.dir/src/Constructor.cc.i
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/mtz/betatron/betatron/src/Constructor.cc > CMakeFiles/main.dir/src/Constructor.cc.i
 
 CMakeFiles/main.dir/src/Constructor.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/main.dir/src/Constructor.cc.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/mtz/betatron/betatron/src/Constructor.cc -o CMakeFiles/main.dir/src/Constructor.cc.s
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/mtz/betatron/betatron/src/Constructor.cc -o CMakeFiles/main.dir/src/Constructor.cc.s
 
 CMakeFiles/main.dir/src/EventAction.cc.o: CMakeFiles/main.dir/flags.make
 CMakeFiles/main.dir/src/EventAction.cc.o: ../src/EventAction.cc
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mtz/betatron/betatron/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/main.dir/src/EventAction.cc.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/main.dir/src/EventAction.cc.o -c /home/mtz/betatron/betatron/src/EventAction.cc
+	/usr/bin/g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/main.dir/src/EventAction.cc.o -c /home/mtz/betatron/betatron/src/EventAction.cc
 
 CMakeFiles/main.dir/src/EventAction.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/main.dir/src/EventAction.cc.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/mtz/betatron/betatron/src/EventAction.cc > CMakeFiles/main.dir/src/EventAction.cc.i
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/mtz/betatron/betatron/src/EventAction.cc > CMakeFiles/main.dir/src/EventAction.cc.i
 
 CMakeFiles/main.dir/src/EventAction.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/main.dir/src/EventAction.cc.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/mtz/betatron/betatron/src/EventAction.cc -o CMakeFiles/main.dir/src/EventAction.cc.s
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/mtz/betatron/betatron/src/EventAction.cc -o CMakeFiles/main.dir/src/EventAction.cc.s
 
 CMakeFiles/main.dir/src/InitializationAction.cc.o: CMakeFiles/main.dir/flags.make
 CMakeFiles/main.dir/src/InitializationAction.cc.o: ../src/InitializationAction.cc
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mtz/betatron/betatron/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/main.dir/src/InitializationAction.cc.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/main.dir/src/InitializationAction.cc.o -c /home/mtz/betatron/betatron/src/InitializationAction.cc
+	/usr/bin/g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/main.dir/src/InitializationAction.cc.o -c /home/mtz/betatron/betatron/src/InitializationAction.cc
 
 CMakeFiles/main.dir/src/InitializationAction.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/main.dir/src/InitializationAction.cc.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/mtz/betatron/betatron/src/InitializationAction.cc > CMakeFiles/main.dir/src/InitializationAction.cc.i
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/mtz/betatron/betatron/src/InitializationAction.cc > CMakeFiles/main.dir/src/InitializationAction.cc.i
 
 CMakeFiles/main.dir/src/InitializationAction.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/main.dir/src/InitializationAction.cc.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/mtz/betatron/betatron/src/InitializationAction.cc -o CMakeFiles/main.dir/src/InitializationAction.cc.s
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/mtz/betatron/betatron/src/InitializationAction.cc -o CMakeFiles/main.dir/src/InitializationAction.cc.s
 
 CMakeFiles/main.dir/src/PhysicalList.cc.o: CMakeFiles/main.dir/flags.make
 CMakeFiles/main.dir/src/PhysicalList.cc.o: ../src/PhysicalList.cc
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mtz/betatron/betatron/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/main.dir/src/PhysicalList.cc.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/main.dir/src/PhysicalList.cc.o -c /home/mtz/betatron/betatron/src/PhysicalList.cc
+	/usr/bin/g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/main.dir/src/PhysicalList.cc.o -c /home/mtz/betatron/betatron/src/PhysicalList.cc
 
 CMakeFiles/main.dir/src/PhysicalList.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/main.dir/src/PhysicalList.cc.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/mtz/betatron/betatron/src/PhysicalList.cc > CMakeFiles/main.dir/src/PhysicalList.cc.i
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/mtz/betatron/betatron/src/PhysicalList.cc > CMakeFiles/main.dir/src/PhysicalList.cc.i
 
 CMakeFiles/main.dir/src/PhysicalList.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/main.dir/src/PhysicalList.cc.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/mtz/betatron/betatron/src/PhysicalList.cc -o CMakeFiles/main.dir/src/PhysicalList.cc.s
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/mtz/betatron/betatron/src/PhysicalList.cc -o CMakeFiles/main.dir/src/PhysicalList.cc.s
 
 CMakeFiles/main.dir/src/PrimaryGeneratorAction.cc.o: CMakeFiles/main.dir/flags.make
 CMakeFiles/main.dir/src/PrimaryGeneratorAction.cc.o: ../src/PrimaryGeneratorAction.cc
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mtz/betatron/betatron/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/main.dir/src/PrimaryGeneratorAction.cc.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/main.dir/src/PrimaryGeneratorAction.cc.o -c /home/mtz/betatron/betatron/src/PrimaryGeneratorAction.cc
+	/usr/bin/g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/main.dir/src/PrimaryGeneratorAction.cc.o -c /home/mtz/betatron/betatron/src/PrimaryGeneratorAction.cc
 
 CMakeFiles/main.dir/src/PrimaryGeneratorAction.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/main.dir/src/PrimaryGeneratorAction.cc.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/mtz/betatron/betatron/src/PrimaryGeneratorAction.cc > CMakeFiles/main.dir/src/PrimaryGeneratorAction.cc.i
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/mtz/betatron/betatron/src/PrimaryGeneratorAction.cc > CMakeFiles/main.dir/src/PrimaryGeneratorAction.cc.i
 
 CMakeFiles/main.dir/src/PrimaryGeneratorAction.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/main.dir/src/PrimaryGeneratorAction.cc.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/mtz/betatron/betatron/src/PrimaryGeneratorAction.cc -o CMakeFiles/main.dir/src/PrimaryGeneratorAction.cc.s
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/mtz/betatron/betatron/src/PrimaryGeneratorAction.cc -o CMakeFiles/main.dir/src/PrimaryGeneratorAction.cc.s
 
 CMakeFiles/main.dir/src/RunAction.cc.o: CMakeFiles/main.dir/flags.make
 CMakeFiles/main.dir/src/RunAction.cc.o: ../src/RunAction.cc
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mtz/betatron/betatron/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/main.dir/src/RunAction.cc.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/main.dir/src/RunAction.cc.o -c /home/mtz/betatron/betatron/src/RunAction.cc
+	/usr/bin/g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/main.dir/src/RunAction.cc.o -c /home/mtz/betatron/betatron/src/RunAction.cc
 
 CMakeFiles/main.dir/src/RunAction.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/main.dir/src/RunAction.cc.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/mtz/betatron/betatron/src/RunAction.cc > CMakeFiles/main.dir/src/RunAction.cc.i
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/mtz/betatron/betatron/src/RunAction.cc > CMakeFiles/main.dir/src/RunAction.cc.i
 
 CMakeFiles/main.dir/src/RunAction.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/main.dir/src/RunAction.cc.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/mtz/betatron/betatron/src/RunAction.cc -o CMakeFiles/main.dir/src/RunAction.cc.s
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/mtz/betatron/betatron/src/RunAction.cc -o CMakeFiles/main.dir/src/RunAction.cc.s
 
 CMakeFiles/main.dir/src/SteppingAction.cc.o: CMakeFiles/main.dir/flags.make
 CMakeFiles/main.dir/src/SteppingAction.cc.o: ../src/SteppingAction.cc
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mtz/betatron/betatron/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/main.dir/src/SteppingAction.cc.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/main.dir/src/SteppingAction.cc.o -c /home/mtz/betatron/betatron/src/SteppingAction.cc
+	/usr/bin/g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/main.dir/src/SteppingAction.cc.o -c /home/mtz/betatron/betatron/src/SteppingAction.cc
 
 CMakeFiles/main.dir/src/SteppingAction.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/main.dir/src/SteppingAction.cc.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/mtz/betatron/betatron/src/SteppingAction.cc > CMakeFiles/main.dir/src/SteppingAction.cc.i
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/mtz/betatron/betatron/src/SteppingAction.cc > CMakeFiles/main.dir/src/SteppingAction.cc.i
 
 CMakeFiles/main.dir/src/SteppingAction.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/main.dir/src/SteppingAction.cc.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/mtz/betatron/betatron/src/SteppingAction.cc -o CMakeFiles/main.dir/src/SteppingAction.cc.s
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/mtz/betatron/betatron/src/SteppingAction.cc -o CMakeFiles/main.dir/src/SteppingAction.cc.s
 
 # Object files for target main
 main_OBJECTS = \

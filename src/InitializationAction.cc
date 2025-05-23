@@ -2,7 +2,7 @@
  * @Author: mtz nuaamzt@nuaa.edu.cn
  * @Date: 2025-05-21 12:20:58
  * @LastEditors: mtz nuaamzt@nuaa.edu.cn
- * @LastEditTime: 2025-05-21 15:52:02
+ * @LastEditTime: 2025-05-22 16:37:05
  * @FilePath: /betatron/src/InitializationAction.cc
  * @Description: manage the action of the simulation
  */
@@ -14,7 +14,7 @@ InitializationAction::~InitializationAction() {}
 
 void InitializationAction::BuildForMaster() const {
   // Define the master thread action
-  RunAction* runAction = new RunAction;
+  RunAction* runAction = new RunAction(nullptr);
   SetUserAction(runAction);
   
 }
@@ -24,7 +24,7 @@ void InitializationAction::Build() const {
     SetUserAction(primaryGeneratorAction);
 
   // Define the worker thread action
-    RunAction* runAction = new RunAction;
+    RunAction* runAction = new RunAction(primaryGeneratorAction);
     SetUserAction(runAction);
 
     // Define the event action

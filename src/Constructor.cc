@@ -2,7 +2,7 @@
  * @Author: mtz nuaamzt@nuaa.edu.cn
  * @Date: 2025-05-21 11:55:44
  * @LastEditors: mtz nuaamzt@nuaa.edu.cn
- * @LastEditTime: 2025-05-22 11:56:16
+ * @LastEditTime: 2025-05-22 14:58:47
  * @FilePath: /betatron/src/Constructor.cc
  * @Description: define world volume and all the volumes in the world
  */
@@ -31,7 +31,9 @@ G4VPhysicalVolume *Constructor::Construct() {
       new G4PVPlacement(0, G4ThreeVector(), worldLog, "World", 0, false, 0);
 
   // Define BTO
-  // DefineBTO();
+  DefineBTO();
+  // Define Nuaa
+  //DefineNuaa();
 
   // Define detector
   DefineDetector();
@@ -164,4 +166,60 @@ void Constructor::DefineDetector() {
                                       worldLog, false, j + i * ncols, true);
     }
   }
+}
+
+
+void Constructor::DefineNuaa() {
+  G4NistManager *nist = G4NistManager::Instance();
+  G4Material *mat = nist->FindOrBuildMaterial("G4_W"); // 用钨材料
+
+  G4double thick = 1.0 * cm; // 字母笔画厚度
+  G4double height = 12.0 * cm; // 字母高度
+  G4double width = 2.0 * cm;   // 单个字母宽度
+  G4double gap = 1.5 * cm;     // 字母间距
+
+  // N
+  new G4PVPlacement(0, G4ThreeVector(-13*cm, 0, 0), 
+      new G4LogicalVolume(new G4Box("N_left", thick/2, height/2, thick/2), mat, "N_left_log"), 
+      "N_left_phys", worldLog, false, 0);
+  new G4PVPlacement(0, G4ThreeVector(-11*cm, 0, 0), 
+      new G4LogicalVolume(new G4Box("N_right", thick/2, height/2, thick/2), mat, "N_right_log"), 
+      "N_right_phys", worldLog, false, 0);
+  new G4PVPlacement(0, G4ThreeVector(-12*cm, 0, 0), 
+      new G4LogicalVolume(new G4Box("N_diag", thick/2, height/2*0.98, thick/2), mat, "N_diag_log"), 
+      "N_diag_phys", worldLog, false, 0, 
+      new G4RotationMatrix(0,0,atan(height/(width+gap))));
+
+  // U
+  new G4PVPlacement(0, G4ThreeVector(-8*cm, 0, 0), 
+      new G4LogicalVolume(new G4Box("U_left", thick/2, height/2, thick/2), mat, "U_left_log"), 
+      "U_left_phys", worldLog, false, 0);
+  new G4PVPlacement(0, G4ThreeVector(-6*cm, 0, 0), 
+      new G4LogicalVolume(new G4Box("U_right", thick/2, height/2, thick/2), mat, "U_right_log"), 
+      "U_right_phys", worldLog, false, 0);
+  new G4PVPlacement(0, G4ThreeVector(-7*cm, -height/2+thick/2, 0), 
+      new G4LogicalVolume(new G4Box("U_bottom", width/2+gap/2, thick/2, thick/2), mat, "U_bottom_log"), 
+      "U_bottom_phys", worldLog, false, 0);
+
+  // A
+  for(int k=0; k<2; ++k) {
+      G4double xA = -2*cm + k*2*cm;
+      new G4PVPlacement(0, G4ThreeVector(xA, 0, 0), 
+          new G4LogicalVolume(new G4Box("A_leg", thick/2, height/2, thick/2), mat, "A_leg_log"), 
+          "A_leg_phys", worldLog, false, 0);
+  }
+  new G4PVPlacement(0, G4ThreeVector(-1*cm, 0, 0), 
+      new G4LogicalVolume(new G4Box("A_cross", width/2+gap/2, thick/2, thick/2), mat, "A_cross_log"), 
+      "A_cross_phys", worldLog, false, 0);
+
+  // A2
+  for(int k=0; k<2; ++k) {
+      G4double xA = 3*cm + k*2*cm;
+      new G4PVPlacement(0, G4ThreeVector(xA, 0, 0), 
+          new G4LogicalVolume(new G4Box("A2_leg", thick/2, height/2, thick/2), mat, "A2_leg_log"), 
+          "A2_leg_phys", worldLog, false, 0);
+  }
+  new G4PVPlacement(0, G4ThreeVector(4*cm, 0, 0), 
+      new G4LogicalVolume(new G4Box("A2_cross", width/2+gap/2, thick/2, thick/2), mat, "A2_cross_log"), 
+      "A2_cross_phys", worldLog, false, 0);
 }

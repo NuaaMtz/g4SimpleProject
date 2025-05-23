@@ -2,7 +2,7 @@
  * @Author: mtz nuaamzt@nuaa.edu.cn
  * @Date: 2025-05-21 14:06:54
  * @LastEditors: mtz nuaamzt@nuaa.edu.cn
- * @LastEditTime: 2025-05-22 12:04:06
+ * @LastEditTime: 2025-05-22 17:23:59
  * @FilePath: /betatron/src/RunAction.cc
  * @Description: run action
  */
@@ -10,7 +10,7 @@
 #include <G4Types.hh>
 #include <G4UserRunAction.hh>
 
-RunAction::RunAction() : G4UserRunAction(), fEventTimes(0), fStepTimes(0) {
+RunAction::RunAction(PrimaryGeneratorAction* primaryGenerator) : G4UserRunAction(), fPrimaryGenerator(primaryGenerator),fEventTimes(0), fStepTimes(0), fSimTime(0) {
 
   // Create root structor
   auto man = G4Root::G4AnalysisManager::Instance();
@@ -51,6 +51,10 @@ RunAction::RunAction() : G4UserRunAction(), fEventTimes(0), fStepTimes(0) {
   man->CreateNtupleDColumn("z");
   man->CreateNtupleDColumn("edep");
   man->FinishNtuple(4);
+
+  man->CreateNtuple("GlobalTime", "end time from the begin");
+  man->CreateNtupleDColumn("GlobalTime");
+  man->FinishNtuple(5);
 }
 RunAction::~RunAction() {
   
@@ -99,6 +103,8 @@ void RunAction::EndOfRunAction(const G4Run *run) {
     man->AddNtupleRow(0);
     man->FillNtupleIColumn(1, 0, stepTimes); // ntupleId 1, columnId 0
     man->AddNtupleRow(1);
+    man->FillNtupleDColumn(5, 0, fSimTime.GetValue()); // ntupleId 5,
+    man->AddNtupleRow(5);
 
   }
   man->Write();

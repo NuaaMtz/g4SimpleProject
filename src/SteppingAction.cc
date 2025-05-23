@@ -2,13 +2,16 @@
  * @Author: mtz nuaamzt@nuaa.edu.cn
  * @Date: 2025-05-21 15:33:00
  * @LastEditors: mtz nuaamzt@nuaa.edu.cn
- * @LastEditTime: 2025-05-22 12:03:40
+ * @LastEditTime: 2025-05-22 17:21:47
  * @FilePath: /betatron/src/SteppingAction.cc
  * @Description: 这是默认设置,请设置`customMade`, 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE//
  */
 #include "SteppingAction.hh"
 #include "Constructor.hh"
 #include "EventAction.hh"
+#include <G4Types.hh>
+#include <algorithm>
+#include <iostream>
 
 SteppingAction::SteppingAction(EventAction *eventAction)
     : G4UserSteppingAction(), fEventAction(eventAction),
@@ -25,12 +28,17 @@ void SteppingAction::UserSteppingAction(const G4Step *step) {
   // Process the step
   // G4cout << "Stepping Action" << G4endl;
   fEventAction->AddStepTimes(1);
-  // test: AnalysisManager could be work on step
-  // auto man = G4AnalysisManager::Instance();
-  // man->FillNtupleIColumn(3, 0, 1);    // ntupleId 3, column 0
-  // man->FillNtupleIColumn(3, 1, 1);    // ntupleId 3, column 1
-  // man->FillNtupleDColumn(3, 2, 1); // ntupleId 3, column 2
-  // man->AddNtupleRow(3);
+
+  // Get life time of primary particle
+  G4Track *track = step->GetTrack();
+  //G4int n_particles =fEventAction->fRunAction->fPrimaryGenerator->GetParticleGun()->GetNumberOfParticles();
+  if (track->GetParentID()==0 && track->GetTrackStatus() == fStopAndKill) {
+    G4double endTime = track->GetGlobalTime();
+    fEventAction->SetSimTime(endTime);
+  }
+  
+
+
 
   // get detector logicalvolume
   if (logicalDetector == nullptr) {
@@ -51,8 +59,10 @@ void SteppingAction::UserSteppingAction(const G4Step *step) {
   // Get copyNo and  energy deposit
   G4int copyNo = step->GetPreStepPoint()->GetTouchableHandle()->GetVolume()->GetCopyNo();
   G4double edep = step->GetTotalEnergyDeposit();
-  G4int i = copyNo / RunAction::ncols;
-  G4int j = copyNo % RunAction::ncols;
+
+  G4int ncols=6;
+  G4int i = copyNo / ncols;
+  G4int j = copyNo % ncols;
 
   //Get position X and Y
   G4double x = step->GetPreStepPoint()->GetPosition().x();

@@ -34,6 +34,7 @@ public:
   G4LogicalVolume *worldLog;
 
   void DefineDetector();
+  void DefineNuaa();
 
   G4VPhysicalVolume *GetPhysicalVolume() const {
     return physicalDetector;

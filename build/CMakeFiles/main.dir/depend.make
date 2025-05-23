@@ -1043,6 +1043,7 @@ CMakeFiles/main.dir/src/Constructor.cc.o: /home/mtz/sofeware/geant4-mt/install/i
 
 CMakeFiles/main.dir/src/EventAction.cc.o: ../include/Constructor.hh
 CMakeFiles/main.dir/src/EventAction.cc.o: ../include/EventAction.hh
+CMakeFiles/main.dir/src/EventAction.cc.o: ../include/PrimaryGeneratorAction.hh
 CMakeFiles/main.dir/src/EventAction.cc.o: ../include/RunAction.hh
 CMakeFiles/main.dir/src/EventAction.cc.o: ../src/EventAction.cc
 CMakeFiles/main.dir/src/EventAction.cc.o: /home/mtz/sofeware/geant4-mt/install/include/Geant4/CLHEP/Geometry/BasicVector3D.h
@@ -1142,8 +1143,11 @@ CMakeFiles/main.dir/src/EventAction.cc.o: /home/mtz/sofeware/geant4-mt/install/i
 CMakeFiles/main.dir/src/EventAction.cc.o: /home/mtz/sofeware/geant4-mt/install/include/Geant4/G4Box.hh
 CMakeFiles/main.dir/src/EventAction.cc.o: /home/mtz/sofeware/geant4-mt/install/include/Geant4/G4Box.icc
 CMakeFiles/main.dir/src/EventAction.cc.o: /home/mtz/sofeware/geant4-mt/install/include/Geant4/G4CSGSolid.hh
+CMakeFiles/main.dir/src/EventAction.cc.o: /home/mtz/sofeware/geant4-mt/install/include/Geant4/G4Cache.hh
+CMakeFiles/main.dir/src/EventAction.cc.o: /home/mtz/sofeware/geant4-mt/install/include/Geant4/G4CacheDetails.hh
 CMakeFiles/main.dir/src/EventAction.cc.o: /home/mtz/sofeware/geant4-mt/install/include/Geant4/G4ClassificationOfNewTrack.hh
 CMakeFiles/main.dir/src/EventAction.cc.o: /home/mtz/sofeware/geant4-mt/install/include/Geant4/G4DCofThisEvent.hh
+CMakeFiles/main.dir/src/EventAction.cc.o: /home/mtz/sofeware/geant4-mt/install/include/Geant4/G4DataInterpolation.hh
 CMakeFiles/main.dir/src/EventAction.cc.o: /home/mtz/sofeware/geant4-mt/install/include/Geant4/G4DataVector.hh
 CMakeFiles/main.dir/src/EventAction.cc.o: /home/mtz/sofeware/geant4-mt/install/include/Geant4/G4DataVector.icc
 CMakeFiles/main.dir/src/EventAction.cc.o: /home/mtz/sofeware/geant4-mt/install/include/Geant4/G4DynamicParticle.hh
@@ -1166,6 +1170,9 @@ CMakeFiles/main.dir/src/EventAction.cc.o: /home/mtz/sofeware/geant4-mt/install/i
 CMakeFiles/main.dir/src/EventAction.cc.o: /home/mtz/sofeware/geant4-mt/install/include/Geant4/G4GRSSolid.icc
 CMakeFiles/main.dir/src/EventAction.cc.o: /home/mtz/sofeware/geant4-mt/install/include/Geant4/G4GRSVolume.hh
 CMakeFiles/main.dir/src/EventAction.cc.o: /home/mtz/sofeware/geant4-mt/install/include/Geant4/G4GRSVolume.icc
+CMakeFiles/main.dir/src/EventAction.cc.o: /home/mtz/sofeware/geant4-mt/install/include/Geant4/G4GeneralParticleSource.hh
+CMakeFiles/main.dir/src/EventAction.cc.o: /home/mtz/sofeware/geant4-mt/install/include/Geant4/G4GeneralParticleSourceData.hh
+CMakeFiles/main.dir/src/EventAction.cc.o: /home/mtz/sofeware/geant4-mt/install/include/Geant4/G4GeneralParticleSourceMessenger.hh
 CMakeFiles/main.dir/src/EventAction.cc.o: /home/mtz/sofeware/geant4-mt/install/include/Geant4/G4GeomConfig.hh
 CMakeFiles/main.dir/src/EventAction.cc.o: /home/mtz/sofeware/geant4-mt/install/include/Geant4/G4GeomSplitter.hh
 CMakeFiles/main.dir/src/EventAction.cc.o: /home/mtz/sofeware/geant4-mt/install/include/Geant4/G4GeomTypes.hh
@@ -1222,6 +1229,7 @@ CMakeFiles/main.dir/src/EventAction.cc.o: /home/mtz/sofeware/geant4-mt/install/i
 CMakeFiles/main.dir/src/EventAction.cc.o: /home/mtz/sofeware/geant4-mt/install/include/Geant4/G4ParticleChange.icc
 CMakeFiles/main.dir/src/EventAction.cc.o: /home/mtz/sofeware/geant4-mt/install/include/Geant4/G4ParticleDefinition.hh
 CMakeFiles/main.dir/src/EventAction.cc.o: /home/mtz/sofeware/geant4-mt/install/include/Geant4/G4ParticleDefinition.icc
+CMakeFiles/main.dir/src/EventAction.cc.o: /home/mtz/sofeware/geant4-mt/install/include/Geant4/G4ParticleGun.hh
 CMakeFiles/main.dir/src/EventAction.cc.o: /home/mtz/sofeware/geant4-mt/install/include/Geant4/G4ParticleMomentum.hh
 CMakeFiles/main.dir/src/EventAction.cc.o: /home/mtz/sofeware/geant4-mt/install/include/Geant4/G4ParticleTable.hh
 CMakeFiles/main.dir/src/EventAction.cc.o: /home/mtz/sofeware/geant4-mt/install/include/Geant4/G4ParticleTable.icc
@@ -1263,7 +1271,12 @@ CMakeFiles/main.dir/src/EventAction.cc.o: /home/mtz/sofeware/geant4-mt/install/i
 CMakeFiles/main.dir/src/EventAction.cc.o: /home/mtz/sofeware/geant4-mt/install/include/Geant4/G4Run.hh
 CMakeFiles/main.dir/src/EventAction.cc.o: /home/mtz/sofeware/geant4-mt/install/include/Geant4/G4RunManager.hh
 CMakeFiles/main.dir/src/EventAction.cc.o: /home/mtz/sofeware/geant4-mt/install/include/Geant4/G4RunManagerKernel.hh
+CMakeFiles/main.dir/src/EventAction.cc.o: /home/mtz/sofeware/geant4-mt/install/include/Geant4/G4SPSAngDistribution.hh
+CMakeFiles/main.dir/src/EventAction.cc.o: /home/mtz/sofeware/geant4-mt/install/include/Geant4/G4SPSEneDistribution.hh
+CMakeFiles/main.dir/src/EventAction.cc.o: /home/mtz/sofeware/geant4-mt/install/include/Geant4/G4SPSPosDistribution.hh
+CMakeFiles/main.dir/src/EventAction.cc.o: /home/mtz/sofeware/geant4-mt/install/include/Geant4/G4SPSRandomGenerator.hh
 CMakeFiles/main.dir/src/EventAction.cc.o: /home/mtz/sofeware/geant4-mt/install/include/Geant4/G4SandiaTable.hh
+CMakeFiles/main.dir/src/EventAction.cc.o: /home/mtz/sofeware/geant4-mt/install/include/Geant4/G4SingleParticleSource.hh
 CMakeFiles/main.dir/src/EventAction.cc.o: /home/mtz/sofeware/geant4-mt/install/include/Geant4/G4SmartTrackStack.hh
 CMakeFiles/main.dir/src/EventAction.cc.o: /home/mtz/sofeware/geant4-mt/install/include/Geant4/G4SmartVoxelHeader.hh
 CMakeFiles/main.dir/src/EventAction.cc.o: /home/mtz/sofeware/geant4-mt/install/include/Geant4/G4SmartVoxelHeader.icc
@@ -1351,6 +1364,7 @@ CMakeFiles/main.dir/src/EventAction.cc.o: /home/mtz/sofeware/geant4-mt/install/i
 CMakeFiles/main.dir/src/EventAction.cc.o: /home/mtz/sofeware/geant4-mt/install/include/Geant4/G4VParticleChange.icc
 CMakeFiles/main.dir/src/EventAction.cc.o: /home/mtz/sofeware/geant4-mt/install/include/Geant4/G4VPhysicalVolume.hh
 CMakeFiles/main.dir/src/EventAction.cc.o: /home/mtz/sofeware/geant4-mt/install/include/Geant4/G4VPhysicalVolume.icc
+CMakeFiles/main.dir/src/EventAction.cc.o: /home/mtz/sofeware/geant4-mt/install/include/Geant4/G4VPrimaryGenerator.hh
 CMakeFiles/main.dir/src/EventAction.cc.o: /home/mtz/sofeware/geant4-mt/install/include/Geant4/G4VProcess.hh
 CMakeFiles/main.dir/src/EventAction.cc.o: /home/mtz/sofeware/geant4-mt/install/include/Geant4/G4VRNtupleManager.hh
 CMakeFiles/main.dir/src/EventAction.cc.o: /home/mtz/sofeware/geant4-mt/install/include/Geant4/G4VSolid.hh
@@ -1361,6 +1375,7 @@ CMakeFiles/main.dir/src/EventAction.cc.o: /home/mtz/sofeware/geant4-mt/install/i
 CMakeFiles/main.dir/src/EventAction.cc.o: /home/mtz/sofeware/geant4-mt/install/include/Geant4/G4VTrajectory.hh
 CMakeFiles/main.dir/src/EventAction.cc.o: /home/mtz/sofeware/geant4-mt/install/include/Geant4/G4VUserDetectorConstruction.hh
 CMakeFiles/main.dir/src/EventAction.cc.o: /home/mtz/sofeware/geant4-mt/install/include/Geant4/G4VUserEventInformation.hh
+CMakeFiles/main.dir/src/EventAction.cc.o: /home/mtz/sofeware/geant4-mt/install/include/Geant4/G4VUserPrimaryGeneratorAction.hh
 CMakeFiles/main.dir/src/EventAction.cc.o: /home/mtz/sofeware/geant4-mt/install/include/Geant4/G4VUserTrackInformation.hh
 CMakeFiles/main.dir/src/EventAction.cc.o: /home/mtz/sofeware/geant4-mt/install/include/Geant4/G4VVolumeMaterialScanner.hh
 CMakeFiles/main.dir/src/EventAction.cc.o: /home/mtz/sofeware/geant4-mt/install/include/Geant4/G4VisExtent.hh
@@ -2921,6 +2936,7 @@ CMakeFiles/main.dir/src/PrimaryGeneratorAction.cc.o: /home/mtz/sofeware/geant4-m
 CMakeFiles/main.dir/src/PrimaryGeneratorAction.cc.o: /home/mtz/sofeware/geant4-mt/install/include/Geant4/trkdefs.hh
 
 CMakeFiles/main.dir/src/RunAction.cc.o: ../include/Constructor.hh
+CMakeFiles/main.dir/src/RunAction.cc.o: ../include/PrimaryGeneratorAction.hh
 CMakeFiles/main.dir/src/RunAction.cc.o: ../include/RunAction.hh
 CMakeFiles/main.dir/src/RunAction.cc.o: ../src/RunAction.cc
 CMakeFiles/main.dir/src/RunAction.cc.o: /home/mtz/sofeware/geant4-mt/install/include/Geant4/CLHEP/Geometry/BasicVector3D.h
@@ -3020,8 +3036,11 @@ CMakeFiles/main.dir/src/RunAction.cc.o: /home/mtz/sofeware/geant4-mt/install/inc
 CMakeFiles/main.dir/src/RunAction.cc.o: /home/mtz/sofeware/geant4-mt/install/include/Geant4/G4Box.hh
 CMakeFiles/main.dir/src/RunAction.cc.o: /home/mtz/sofeware/geant4-mt/install/include/Geant4/G4Box.icc
 CMakeFiles/main.dir/src/RunAction.cc.o: /home/mtz/sofeware/geant4-mt/install/include/Geant4/G4CSGSolid.hh
+CMakeFiles/main.dir/src/RunAction.cc.o: /home/mtz/sofeware/geant4-mt/install/include/Geant4/G4Cache.hh
+CMakeFiles/main.dir/src/RunAction.cc.o: /home/mtz/sofeware/geant4-mt/install/include/Geant4/G4CacheDetails.hh
 CMakeFiles/main.dir/src/RunAction.cc.o: /home/mtz/sofeware/geant4-mt/install/include/Geant4/G4ClassificationOfNewTrack.hh
 CMakeFiles/main.dir/src/RunAction.cc.o: /home/mtz/sofeware/geant4-mt/install/include/Geant4/G4DCofThisEvent.hh
+CMakeFiles/main.dir/src/RunAction.cc.o: /home/mtz/sofeware/geant4-mt/install/include/Geant4/G4DataInterpolation.hh
 CMakeFiles/main.dir/src/RunAction.cc.o: /home/mtz/sofeware/geant4-mt/install/include/Geant4/G4DataVector.hh
 CMakeFiles/main.dir/src/RunAction.cc.o: /home/mtz/sofeware/geant4-mt/install/include/Geant4/G4DataVector.icc
 CMakeFiles/main.dir/src/RunAction.cc.o: /home/mtz/sofeware/geant4-mt/install/include/Geant4/G4DynamicParticle.hh
@@ -3044,6 +3063,9 @@ CMakeFiles/main.dir/src/RunAction.cc.o: /home/mtz/sofeware/geant4-mt/install/inc
 CMakeFiles/main.dir/src/RunAction.cc.o: /home/mtz/sofeware/geant4-mt/install/include/Geant4/G4GRSSolid.icc
 CMakeFiles/main.dir/src/RunAction.cc.o: /home/mtz/sofeware/geant4-mt/install/include/Geant4/G4GRSVolume.hh
 CMakeFiles/main.dir/src/RunAction.cc.o: /home/mtz/sofeware/geant4-mt/install/include/Geant4/G4GRSVolume.icc
+CMakeFiles/main.dir/src/RunAction.cc.o: /home/mtz/sofeware/geant4-mt/install/include/Geant4/G4GeneralParticleSource.hh
+CMakeFiles/main.dir/src/RunAction.cc.o: /home/mtz/sofeware/geant4-mt/install/include/Geant4/G4GeneralParticleSourceData.hh
+CMakeFiles/main.dir/src/RunAction.cc.o: /home/mtz/sofeware/geant4-mt/install/include/Geant4/G4GeneralParticleSourceMessenger.hh
 CMakeFiles/main.dir/src/RunAction.cc.o: /home/mtz/sofeware/geant4-mt/install/include/Geant4/G4GeomConfig.hh
 CMakeFiles/main.dir/src/RunAction.cc.o: /home/mtz/sofeware/geant4-mt/install/include/Geant4/G4GeomSplitter.hh
 CMakeFiles/main.dir/src/RunAction.cc.o: /home/mtz/sofeware/geant4-mt/install/include/Geant4/G4GeomTypes.hh
@@ -3100,6 +3122,7 @@ CMakeFiles/main.dir/src/RunAction.cc.o: /home/mtz/sofeware/geant4-mt/install/inc
 CMakeFiles/main.dir/src/RunAction.cc.o: /home/mtz/sofeware/geant4-mt/install/include/Geant4/G4ParticleChange.icc
 CMakeFiles/main.dir/src/RunAction.cc.o: /home/mtz/sofeware/geant4-mt/install/include/Geant4/G4ParticleDefinition.hh
 CMakeFiles/main.dir/src/RunAction.cc.o: /home/mtz/sofeware/geant4-mt/install/include/Geant4/G4ParticleDefinition.icc
+CMakeFiles/main.dir/src/RunAction.cc.o: /home/mtz/sofeware/geant4-mt/install/include/Geant4/G4ParticleGun.hh
 CMakeFiles/main.dir/src/RunAction.cc.o: /home/mtz/sofeware/geant4-mt/install/include/Geant4/G4ParticleMomentum.hh
 CMakeFiles/main.dir/src/RunAction.cc.o: /home/mtz/sofeware/geant4-mt/install/include/Geant4/G4ParticleTable.hh
 CMakeFiles/main.dir/src/RunAction.cc.o: /home/mtz/sofeware/geant4-mt/install/include/Geant4/G4ParticleTable.icc
@@ -3141,7 +3164,12 @@ CMakeFiles/main.dir/src/RunAction.cc.o: /home/mtz/sofeware/geant4-mt/install/inc
 CMakeFiles/main.dir/src/RunAction.cc.o: /home/mtz/sofeware/geant4-mt/install/include/Geant4/G4Run.hh
 CMakeFiles/main.dir/src/RunAction.cc.o: /home/mtz/sofeware/geant4-mt/install/include/Geant4/G4RunManager.hh
 CMakeFiles/main.dir/src/RunAction.cc.o: /home/mtz/sofeware/geant4-mt/install/include/Geant4/G4RunManagerKernel.hh
+CMakeFiles/main.dir/src/RunAction.cc.o: /home/mtz/sofeware/geant4-mt/install/include/Geant4/G4SPSAngDistribution.hh
+CMakeFiles/main.dir/src/RunAction.cc.o: /home/mtz/sofeware/geant4-mt/install/include/Geant4/G4SPSEneDistribution.hh
+CMakeFiles/main.dir/src/RunAction.cc.o: /home/mtz/sofeware/geant4-mt/install/include/Geant4/G4SPSPosDistribution.hh
+CMakeFiles/main.dir/src/RunAction.cc.o: /home/mtz/sofeware/geant4-mt/install/include/Geant4/G4SPSRandomGenerator.hh
 CMakeFiles/main.dir/src/RunAction.cc.o: /home/mtz/sofeware/geant4-mt/install/include/Geant4/G4SandiaTable.hh
+CMakeFiles/main.dir/src/RunAction.cc.o: /home/mtz/sofeware/geant4-mt/install/include/Geant4/G4SingleParticleSource.hh
 CMakeFiles/main.dir/src/RunAction.cc.o: /home/mtz/sofeware/geant4-mt/install/include/Geant4/G4SmartTrackStack.hh
 CMakeFiles/main.dir/src/RunAction.cc.o: /home/mtz/sofeware/geant4-mt/install/include/Geant4/G4SmartVoxelHeader.hh
 CMakeFiles/main.dir/src/RunAction.cc.o: /home/mtz/sofeware/geant4-mt/install/include/Geant4/G4SmartVoxelHeader.icc
@@ -3228,6 +3256,7 @@ CMakeFiles/main.dir/src/RunAction.cc.o: /home/mtz/sofeware/geant4-mt/install/inc
 CMakeFiles/main.dir/src/RunAction.cc.o: /home/mtz/sofeware/geant4-mt/install/include/Geant4/G4VParticleChange.icc
 CMakeFiles/main.dir/src/RunAction.cc.o: /home/mtz/sofeware/geant4-mt/install/include/Geant4/G4VPhysicalVolume.hh
 CMakeFiles/main.dir/src/RunAction.cc.o: /home/mtz/sofeware/geant4-mt/install/include/Geant4/G4VPhysicalVolume.icc
+CMakeFiles/main.dir/src/RunAction.cc.o: /home/mtz/sofeware/geant4-mt/install/include/Geant4/G4VPrimaryGenerator.hh
 CMakeFiles/main.dir/src/RunAction.cc.o: /home/mtz/sofeware/geant4-mt/install/include/Geant4/G4VProcess.hh
 CMakeFiles/main.dir/src/RunAction.cc.o: /home/mtz/sofeware/geant4-mt/install/include/Geant4/G4VRNtupleManager.hh
 CMakeFiles/main.dir/src/RunAction.cc.o: /home/mtz/sofeware/geant4-mt/install/include/Geant4/G4VSolid.hh
@@ -3238,6 +3267,7 @@ CMakeFiles/main.dir/src/RunAction.cc.o: /home/mtz/sofeware/geant4-mt/install/inc
 CMakeFiles/main.dir/src/RunAction.cc.o: /home/mtz/sofeware/geant4-mt/install/include/Geant4/G4VTrajectory.hh
 CMakeFiles/main.dir/src/RunAction.cc.o: /home/mtz/sofeware/geant4-mt/install/include/Geant4/G4VUserDetectorConstruction.hh
 CMakeFiles/main.dir/src/RunAction.cc.o: /home/mtz/sofeware/geant4-mt/install/include/Geant4/G4VUserEventInformation.hh
+CMakeFiles/main.dir/src/RunAction.cc.o: /home/mtz/sofeware/geant4-mt/install/include/Geant4/G4VUserPrimaryGeneratorAction.hh
 CMakeFiles/main.dir/src/RunAction.cc.o: /home/mtz/sofeware/geant4-mt/install/include/Geant4/G4VUserTrackInformation.hh
 CMakeFiles/main.dir/src/RunAction.cc.o: /home/mtz/sofeware/geant4-mt/install/include/Geant4/G4VVolumeMaterialScanner.hh
 CMakeFiles/main.dir/src/RunAction.cc.o: /home/mtz/sofeware/geant4-mt/install/include/Geant4/G4VisExtent.hh
@@ -3365,6 +3395,7 @@ CMakeFiles/main.dir/src/RunAction.cc.o: /home/mtz/sofeware/geant4-mt/install/inc
 
 CMakeFiles/main.dir/src/SteppingAction.cc.o: ../include/Constructor.hh
 CMakeFiles/main.dir/src/SteppingAction.cc.o: ../include/EventAction.hh
+CMakeFiles/main.dir/src/SteppingAction.cc.o: ../include/PrimaryGeneratorAction.hh
 CMakeFiles/main.dir/src/SteppingAction.cc.o: ../include/RunAction.hh
 CMakeFiles/main.dir/src/SteppingAction.cc.o: ../include/SteppingAction.hh
 CMakeFiles/main.dir/src/SteppingAction.cc.o: ../src/SteppingAction.cc
@@ -3465,8 +3496,11 @@ CMakeFiles/main.dir/src/SteppingAction.cc.o: /home/mtz/sofeware/geant4-mt/instal
 CMakeFiles/main.dir/src/SteppingAction.cc.o: /home/mtz/sofeware/geant4-mt/install/include/Geant4/G4Box.hh
 CMakeFiles/main.dir/src/SteppingAction.cc.o: /home/mtz/sofeware/geant4-mt/install/include/Geant4/G4Box.icc
 CMakeFiles/main.dir/src/SteppingAction.cc.o: /home/mtz/sofeware/geant4-mt/install/include/Geant4/G4CSGSolid.hh
+CMakeFiles/main.dir/src/SteppingAction.cc.o: /home/mtz/sofeware/geant4-mt/install/include/Geant4/G4Cache.hh
+CMakeFiles/main.dir/src/SteppingAction.cc.o: /home/mtz/sofeware/geant4-mt/install/include/Geant4/G4CacheDetails.hh
 CMakeFiles/main.dir/src/SteppingAction.cc.o: /home/mtz/sofeware/geant4-mt/install/include/Geant4/G4ClassificationOfNewTrack.hh
 CMakeFiles/main.dir/src/SteppingAction.cc.o: /home/mtz/sofeware/geant4-mt/install/include/Geant4/G4DCofThisEvent.hh
+CMakeFiles/main.dir/src/SteppingAction.cc.o: /home/mtz/sofeware/geant4-mt/install/include/Geant4/G4DataInterpolation.hh
 CMakeFiles/main.dir/src/SteppingAction.cc.o: /home/mtz/sofeware/geant4-mt/install/include/Geant4/G4DataVector.hh
 CMakeFiles/main.dir/src/SteppingAction.cc.o: /home/mtz/sofeware/geant4-mt/install/include/Geant4/G4DataVector.icc
 CMakeFiles/main.dir/src/SteppingAction.cc.o: /home/mtz/sofeware/geant4-mt/install/include/Geant4/G4DynamicParticle.hh
@@ -3489,6 +3523,9 @@ CMakeFiles/main.dir/src/SteppingAction.cc.o: /home/mtz/sofeware/geant4-mt/instal
 CMakeFiles/main.dir/src/SteppingAction.cc.o: /home/mtz/sofeware/geant4-mt/install/include/Geant4/G4GRSSolid.icc
 CMakeFiles/main.dir/src/SteppingAction.cc.o: /home/mtz/sofeware/geant4-mt/install/include/Geant4/G4GRSVolume.hh
 CMakeFiles/main.dir/src/SteppingAction.cc.o: /home/mtz/sofeware/geant4-mt/install/include/Geant4/G4GRSVolume.icc
+CMakeFiles/main.dir/src/SteppingAction.cc.o: /home/mtz/sofeware/geant4-mt/install/include/Geant4/G4GeneralParticleSource.hh
+CMakeFiles/main.dir/src/SteppingAction.cc.o: /home/mtz/sofeware/geant4-mt/install/include/Geant4/G4GeneralParticleSourceData.hh
+CMakeFiles/main.dir/src/SteppingAction.cc.o: /home/mtz/sofeware/geant4-mt/install/include/Geant4/G4GeneralParticleSourceMessenger.hh
 CMakeFiles/main.dir/src/SteppingAction.cc.o: /home/mtz/sofeware/geant4-mt/install/include/Geant4/G4GeomConfig.hh
 CMakeFiles/main.dir/src/SteppingAction.cc.o: /home/mtz/sofeware/geant4-mt/install/include/Geant4/G4GeomSplitter.hh
 CMakeFiles/main.dir/src/SteppingAction.cc.o: /home/mtz/sofeware/geant4-mt/install/include/Geant4/G4GeomTypes.hh
@@ -3545,6 +3582,7 @@ CMakeFiles/main.dir/src/SteppingAction.cc.o: /home/mtz/sofeware/geant4-mt/instal
 CMakeFiles/main.dir/src/SteppingAction.cc.o: /home/mtz/sofeware/geant4-mt/install/include/Geant4/G4ParticleChange.icc
 CMakeFiles/main.dir/src/SteppingAction.cc.o: /home/mtz/sofeware/geant4-mt/install/include/Geant4/G4ParticleDefinition.hh
 CMakeFiles/main.dir/src/SteppingAction.cc.o: /home/mtz/sofeware/geant4-mt/install/include/Geant4/G4ParticleDefinition.icc
+CMakeFiles/main.dir/src/SteppingAction.cc.o: /home/mtz/sofeware/geant4-mt/install/include/Geant4/G4ParticleGun.hh
 CMakeFiles/main.dir/src/SteppingAction.cc.o: /home/mtz/sofeware/geant4-mt/install/include/Geant4/G4ParticleMomentum.hh
 CMakeFiles/main.dir/src/SteppingAction.cc.o: /home/mtz/sofeware/geant4-mt/install/include/Geant4/G4ParticleTable.hh
 CMakeFiles/main.dir/src/SteppingAction.cc.o: /home/mtz/sofeware/geant4-mt/install/include/Geant4/G4ParticleTable.icc
@@ -3586,7 +3624,12 @@ CMakeFiles/main.dir/src/SteppingAction.cc.o: /home/mtz/sofeware/geant4-mt/instal
 CMakeFiles/main.dir/src/SteppingAction.cc.o: /home/mtz/sofeware/geant4-mt/install/include/Geant4/G4Run.hh
 CMakeFiles/main.dir/src/SteppingAction.cc.o: /home/mtz/sofeware/geant4-mt/install/include/Geant4/G4RunManager.hh
 CMakeFiles/main.dir/src/SteppingAction.cc.o: /home/mtz/sofeware/geant4-mt/install/include/Geant4/G4RunManagerKernel.hh
+CMakeFiles/main.dir/src/SteppingAction.cc.o: /home/mtz/sofeware/geant4-mt/install/include/Geant4/G4SPSAngDistribution.hh
+CMakeFiles/main.dir/src/SteppingAction.cc.o: /home/mtz/sofeware/geant4-mt/install/include/Geant4/G4SPSEneDistribution.hh
+CMakeFiles/main.dir/src/SteppingAction.cc.o: /home/mtz/sofeware/geant4-mt/install/include/Geant4/G4SPSPosDistribution.hh
+CMakeFiles/main.dir/src/SteppingAction.cc.o: /home/mtz/sofeware/geant4-mt/install/include/Geant4/G4SPSRandomGenerator.hh
 CMakeFiles/main.dir/src/SteppingAction.cc.o: /home/mtz/sofeware/geant4-mt/install/include/Geant4/G4SandiaTable.hh
+CMakeFiles/main.dir/src/SteppingAction.cc.o: /home/mtz/sofeware/geant4-mt/install/include/Geant4/G4SingleParticleSource.hh
 CMakeFiles/main.dir/src/SteppingAction.cc.o: /home/mtz/sofeware/geant4-mt/install/include/Geant4/G4SmartTrackStack.hh
 CMakeFiles/main.dir/src/SteppingAction.cc.o: /home/mtz/sofeware/geant4-mt/install/include/Geant4/G4SmartVoxelHeader.hh
 CMakeFiles/main.dir/src/SteppingAction.cc.o: /home/mtz/sofeware/geant4-mt/install/include/Geant4/G4SmartVoxelHeader.icc
@@ -3674,6 +3717,7 @@ CMakeFiles/main.dir/src/SteppingAction.cc.o: /home/mtz/sofeware/geant4-mt/instal
 CMakeFiles/main.dir/src/SteppingAction.cc.o: /home/mtz/sofeware/geant4-mt/install/include/Geant4/G4VParticleChange.icc
 CMakeFiles/main.dir/src/SteppingAction.cc.o: /home/mtz/sofeware/geant4-mt/install/include/Geant4/G4VPhysicalVolume.hh
 CMakeFiles/main.dir/src/SteppingAction.cc.o: /home/mtz/sofeware/geant4-mt/install/include/Geant4/G4VPhysicalVolume.icc
+CMakeFiles/main.dir/src/SteppingAction.cc.o: /home/mtz/sofeware/geant4-mt/install/include/Geant4/G4VPrimaryGenerator.hh
 CMakeFiles/main.dir/src/SteppingAction.cc.o: /home/mtz/sofeware/geant4-mt/install/include/Geant4/G4VProcess.hh
 CMakeFiles/main.dir/src/SteppingAction.cc.o: /home/mtz/sofeware/geant4-mt/install/include/Geant4/G4VRNtupleManager.hh
 CMakeFiles/main.dir/src/SteppingAction.cc.o: /home/mtz/sofeware/geant4-mt/install/include/Geant4/G4VSolid.hh
@@ -3684,6 +3728,7 @@ CMakeFiles/main.dir/src/SteppingAction.cc.o: /home/mtz/sofeware/geant4-mt/instal
 CMakeFiles/main.dir/src/SteppingAction.cc.o: /home/mtz/sofeware/geant4-mt/install/include/Geant4/G4VTrajectory.hh
 CMakeFiles/main.dir/src/SteppingAction.cc.o: /home/mtz/sofeware/geant4-mt/install/include/Geant4/G4VUserDetectorConstruction.hh
 CMakeFiles/main.dir/src/SteppingAction.cc.o: /home/mtz/sofeware/geant4-mt/install/include/Geant4/G4VUserEventInformation.hh
+CMakeFiles/main.dir/src/SteppingAction.cc.o: /home/mtz/sofeware/geant4-mt/install/include/Geant4/G4VUserPrimaryGeneratorAction.hh
 CMakeFiles/main.dir/src/SteppingAction.cc.o: /home/mtz/sofeware/geant4-mt/install/include/Geant4/G4VUserTrackInformation.hh
 CMakeFiles/main.dir/src/SteppingAction.cc.o: /home/mtz/sofeware/geant4-mt/install/include/Geant4/G4VVolumeMaterialScanner.hh
 CMakeFiles/main.dir/src/SteppingAction.cc.o: /home/mtz/sofeware/geant4-mt/install/include/Geant4/G4VisExtent.hh
